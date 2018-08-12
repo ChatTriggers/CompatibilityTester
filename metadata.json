@@ -1,0 +1,4 @@
+{
+	"name": "CompatibilityTester",
+	"description": "Compatibility tester for ChatTriggers. Attempts to use all available methods to test cross version support."
+}
