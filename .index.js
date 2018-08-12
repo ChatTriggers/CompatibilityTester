@@ -37,14 +37,17 @@ register("command", function(type) {
 
 function out(arg) {
 	Stresser.tested++;
-	var evaluated;
 	try {
-		eval(arg);
-		Stresser.message.addTextComponent("&a. ").chat();
+		var evaluated = eval(arg);
+		Stresser.message.addTextComponent(
+			new TextComponent("&a. ").setHoverValue(arg + "\n&a" + evaluated)
+		).chat();
 		Stresser.completed++;
 	} catch(err) {
-		ChatLib.chat(arg + ": &c" + err);
-		Stresser.message.addTextComponent("&cX ").chat();
+		ChatLib.chat(arg + ": \n &c" + err);
+		Stresser.message.addTextComponent(
+			new TextComponent("&cX ").setHoverValue(arg + "\n&c" + err)
+		).chat();
 	}
 }
 

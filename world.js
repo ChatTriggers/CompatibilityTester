@@ -1,6 +1,6 @@
 Stresser.tests.put("world", function() {
 	out('World.getAllEntities()');
-	out('World.getAllEntitiesOfType("net.minecraft.entity.EntityPlayer")');
+	out('World.getAllEntitiesOfType(Java.type("net.minecraft.entity.Entity").class)');
 	out('World.getAllPlayers()');
 	out('World.getBlockAt(0, 0, 0)');
 	out('World.getChunk(0, 0, 0)');
@@ -21,5 +21,5 @@ Stresser.tests.put("world", function() {
 		out('World.playRecord("record.11", 0, 0, 0)');
 		out('World.playSound("ui.button.click", 1, 1)');
 	}
-	out('showTitle("test", "test", 5, 5, 5)');
+	out('World.showTitle("test", "test", 5, 5, 5)');
 });
