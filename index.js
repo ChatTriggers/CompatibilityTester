@@ -20,6 +20,9 @@ register("command", function(type) {
 		new Thread(function() {
 			ChatLib.chat("&9&m" + ChatLib.getChatBreak("-"));
 			Stresser.tests.forEach(function(key, value) {
+				Stresser.message.addTextComponent(
+					new TextComponent("&f> ").setHoverValue(key)
+				).chat();
 				value();
 			});
 			

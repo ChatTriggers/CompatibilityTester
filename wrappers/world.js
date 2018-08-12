@@ -22,4 +22,14 @@ Stresser.tests.put("world", function() {
 		out('World.playSound("ui.button.click", 1, 1)');
 	}
 	out('World.showTitle("test", "test", 5, 5, 5)');
+	out('World.border.getCenterX()');
+	out('World.border.getCenterZ()');
+	out('World.border.getSize()');
+	out('World.border.getTargetSize()');
+	out('World.border.getTimeUntilTarget()');
+	out('World.particle.getParticleNames()');
+	out('World.particle.spawnParticle("EXPLOSION_NORMAL", 0, 0, 0, 0, 0, 0)');
+	out('World.spawn.getX()');
+	out('World.spawn.getY()');
+	out('World.spawn.getZ()');
 });
