@@ -1,0 +1,22 @@
+Stresser.tests.put("entity", function() {
+	out('World.getAllEntities()[0].getClassName()');
+	out('World.getAllEntities()[0].getEntity()');
+	out('World.getAllEntities()[0].getEyeHeight()');
+	out('World.getAllEntities()[0].getHeight()');
+	out('World.getAllEntities()[0].getHP()');
+	out('World.getAllEntities()[0].getMotionX()');
+	out('World.getAllEntities()[0].getMotionY()');
+	out('World.getAllEntities()[0].getMotionZ()');
+	out('World.getAllEntities()[0].getName()');
+	out('World.getAllEntities()[0].getPitch()');
+	out('World.getAllEntities()[0].getRider()');
+	out('World.getAllEntities()[0].getRiding()');
+	out('World.getAllEntities()[0].getUUID()');
+	out('World.getAllEntities()[0].getWidth()');
+	out('World.getAllEntities()[0].getX()');
+	out('World.getAllEntities()[0].getY()');
+	out('World.getAllEntities()[0].getYaw()');
+	out('World.getAllEntities()[0].getZ()');
+	out('World.getAllEntities()[0].isDead()');
+	out('World.getAllEntities()[0].toString()');
+});
